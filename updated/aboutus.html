@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.user-img{
+  height: 480px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>We Are an E-Learning website for the modern world</p>
+  <p>We Provide Best Notes at Cheaper Prices. We Help in relieving Stress and Anxiety</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="user-img" src="parth.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Parth </h2>
+        <p class="title">CEO & Founder</p>
+        <p>Inspiring B.tech Student. Anxiety and Stress Councellor</p>
+        <p>parth@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img class="user-img" src="siddhi.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Siddhi</h2>
+        <p class="title">Hardware Expert</p>
+        <p>Inspiring Btech Student.Handles Hardware Part of Team.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img class="user-img" src="keshav.jpeg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Keshav</h2>
+        <p class="title">Designer</p>
+        <p>	Software Devloper know to many languages.</p>
+        <p>keshav@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img class="user-img" src="neha.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Neha </h2>
+        <p class="title">Backend Expert</p>
+        <p>Good Backend Developer. Communication Expert</p>
+        <p>neha@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img class="user-img" src="kritik.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Kritik </h2>
+        <p class="title">Frontend Developer</p>
+        <p>Good Frontend Developer. Helps in Competitive Exams</p>
+        <p>Kritik@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

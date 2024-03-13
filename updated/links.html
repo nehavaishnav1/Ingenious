@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container .card:hover .imgBx{
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.container .card .imgBx img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 270px;
+    height: 200px;
+}
+
+.container .card .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container .card:hover .contentBx{
+    height: 210px;
+}
+
+.container .card .contentBx h2{
+    position:relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+
+.container .card .contentBx .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card:hover .contentBx .details{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.container .card .contentBx .details p{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+legend{
+    color: #5c544b;
+    font-size: 110%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+    position: relative;
+}
+
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.container .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9bdc28;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before{
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after{
+    content: 'Ingenious';
+    position: absolute;
+    top: 30%;
+    left: -3%;
+    font-size: 9em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255,255,0.04);
+}
+
+.container .card .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.btn:link,
+.btn:visited,
+input[type="submit"]{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"]{
+    background-color: pink;
+    border: 1px solid pink;
+    color: #fff;
+}
+
+.btn-border:link,
+.btn-border:visited{
+    border: 1px solid pink;
+    color: pink;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active{
+    background-color: #ed8282;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    border: 1px solid #ed8282;
+}
+
+.btn-border:hover,
+.btn-border:active{
+    color: #fff;
+    border: 1px solid #ed8282;
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="col span-1-of-4">
+    <div class="card">
+        <div class="imgBx">
+            <img src="jee.jpeg">
+        </div>
+        <div class="contentBx">
+            <h2></h2>
+            <div class="details">
+                <p>Do It or Crack It</p>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1G85ClGqb-M69rRMARVXDEFhTApQhiteV" class="btn btn-border">Notes</a>
+        </div>
+    </div>
+    </div>
+    <div class="col span-1-of-4">
+    <div class="card">
+        <div class="imgBx">
+            <img src="neet.jpeg">
+        </div>
+        <div class="contentBx">
+            <h2></h2>
+            <div class="details">
+                <p>Hustle To Gain</p>
+            </div>
+            <a href="https://drive.google.com/drive/u/0/folders/1AED9DviN3a6UXbLa_ZRUKLi5DFvdiyT-" class="btn btn-border">Notes</a>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
